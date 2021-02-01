@@ -19,7 +19,7 @@ cc.Class({
 
     onBeginContact: function (contact, selfCollider, otherCollider) {
         isSpawn=false;
-        otherCollider.body.linearVelocity=cc.v2(0,-30);
+        //otherCollider.body.linearVelocity=cc.v2(0,-30);
     },
 
     onEndContact (contact, selfCollider, otherCollider)
