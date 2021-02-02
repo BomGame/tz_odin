@@ -29,7 +29,25 @@ cc.Class({
         Diamond.parent = scene;
         Diamond.setPosition(selfCollider.node.x, selfCollider.node.y);
         Diamond.name='diam';
-        Diamond.color=cc.Color.CYAN;
+        var color=Math.floor(Math.random()*5);
+        switch(color)
+        {
+            case 0:
+                Diamond.color=cc.Color.CYAN;
+                break;
+            case 1:
+                Diamond.color=cc.Color.RED;
+                break;
+            case 2:
+                Diamond.color=cc.Color.ORANGE;
+                break;
+            case 3:
+                Diamond.color=cc.Color.GREEN;
+                break;
+            case 4:
+                Diamond.color=cc.Color.WHITE;
+                break;
+        }
     },
 
     start () { },
@@ -43,6 +61,25 @@ cc.Class({
             var node = this.node;
             Diamond.setPosition(node.x, node.y);
             Diamond.name='diam';
+            var color=Math.floor(Math.random()*5);
+            switch(color)
+            {
+                case 0:
+                    Diamond.color=cc.Color.CYAN;
+                    break;
+                case 1:
+                    Diamond.color=cc.Color.RED;
+                    break;
+                case 2:
+                    Diamond.color=cc.Color.ORANGE;
+                    break;
+                case 3:
+                    Diamond.color=cc.Color.GREEN;
+                    break;
+                case 4:
+                    Diamond.color=cc.Color.WHITE;
+                    break;
+            }
         }
     },
 });

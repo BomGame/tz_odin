@@ -201,7 +201,7 @@
       "array": [
         0,
         0,
-        375.8550252424464,
+        368.1690497838595,
         0,
         0,
         0,
@@ -721,7 +721,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -526.086,
+        -527.422,
         47.267,
         0,
         0,
@@ -797,7 +797,7 @@
       "y": 0
     },
     "_angularVelocity": 0,
-    "_fixedRotation": false,
+    "_fixedRotation": true,
     "enabledContactListener": false,
     "bullet": false,
     "awakeOnLoad": true,
