@@ -24,6 +24,8 @@ cc.Class({
 
     onEndContact (contact, selfCollider, otherCollider)
     {
+        //console.log("valid "+cc.isValid(otherCollider));
+            
         var scene = cc.director.getScene();
         var Diamond = cc.instantiate(this.diamond);
         Diamond.parent = scene;
