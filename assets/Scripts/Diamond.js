@@ -76,31 +76,17 @@ cc.Class({
             {
                 if(left[0].collider.node.color._val==right[0].collider.node.color._val&&right[0].collider.node.color._val==this.node.color._val&&left[0].collider.node.name==right[0].collider.node.name&&right[0].collider.node.name==this.node.name)
                 {
-                    //console.log("valid "+cc.isValid(this.node));
-                    //this.node.removeFromParent();
-                    //this.node.active=false;
                     this.node.runAction(cc.moveTo(0,900,0));
                     left[0].collider.node.runAction(cc.moveTo(0,900,0));;
                     right[0].collider.node.runAction(cc.moveTo(0,900,0));;
-                    //this.node.destroy();
-                    //left[0].collider.node.destroy();
-                    //right[0].collider.node.destroy();
-                    /*console.log("left"+left[0].collider.node.name);
-                    console.log("right"+right[0].collider.node.name);
-                    console.log("this"+this.node.name);*/
                 
-                    //this.node.color=cc.Color.BLACK;
                     destroy=false;
                 }
-                //console.log(this.node.color._val);
             }
             return;
         }
         if(!destroy)
         {
-            //this.node.destroy();
-            //left[0].collider.node.destroy();
-            //right[0].collider.node.destroy();
             return;
         }
     },
