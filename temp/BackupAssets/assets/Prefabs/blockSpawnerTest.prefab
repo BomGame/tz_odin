@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "diamond",
+    "_name": "blockSpawnerTest",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -57,8 +57,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -1003,
-        -399,
+        -991,
+        -290,
         0,
         0,
         0,
@@ -98,7 +98,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "43bb219e-7175-4cfc-8852-f3ef775ddc5f"
+      "__uuid__": "b8da8a00-955a-494d-ab61-c0803f67b8b7"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -115,13 +115,17 @@
     "_id": ""
   },
   {
-    "__type__": "e7832HtvipMvYuALRfKsNxg",
+    "__type__": "2fca2I4fTFBNpG9os7aFiI3",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
+    "diamond": {
+      "__uuid__": "a658cff2-533e-49a1-b117-81e420491117"
+    },
+    "isSpawn": false,
     "_id": ""
   },
   {
@@ -132,9 +136,9 @@
       "__id__": 1
     },
     "_enabled": true,
-    "_type": 2,
-    "_allowSleep": true,
-    "_gravityScale": 0.1,
+    "_type": 0,
+    "_allowSleep": false,
+    "_gravityScale": 0,
     "_linearDamping": 0,
     "_angularDamping": 0,
     "_linearVelocity": {
@@ -146,7 +150,7 @@
     "_fixedRotation": true,
     "enabledContactListener": true,
     "bullet": false,
-    "awakeOnLoad": true,
+    "awakeOnLoad": false,
     "_id": ""
   },
   {
@@ -158,9 +162,9 @@
     },
     "_enabled": true,
     "tag": 0,
-    "_density": 0.5,
-    "_sensor": false,
-    "_friction": 10,
+    "_density": 0,
+    "_sensor": true,
+    "_friction": 0,
     "_restitution": 0,
     "body": null,
     "_offset": {
@@ -170,8 +174,8 @@
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 70,
-      "height": 74
+      "width": 75,
+      "height": 75
     },
     "_id": ""
   },
@@ -181,7 +185,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "a658cff2-533e-49a1-b117-81e420491117"
+      "__uuid__": "8d8ddbee-d4fd-4dc1-b5ee-1761073aa518"
     },
     "fileId": "",
     "sync": false

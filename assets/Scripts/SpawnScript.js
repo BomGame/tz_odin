@@ -24,29 +24,34 @@ cc.Class({
 
     onEndContact (contact, selfCollider, otherCollider)
     {
-        var scene = cc.director.getScene();
-        var Diamond = cc.instantiate(this.diamond);
-        Diamond.parent = scene;
-        Diamond.setPosition(selfCollider.node.x, selfCollider.node.y);
-        Diamond.name='diam';
-        var color=Math.floor(Math.random()*5);
-        switch(color)
+        var results=cc.director.getPhysicsManager().rayCast(
+            cc.v2(selfCollider.node.x, selfCollider.node.y-40),cc.v2(selfCollider.node.x, selfCollider.node.y+40),cc.RayCastType.All);
+        if(results.length==1)
         {
-            case 0:
-                Diamond.color=cc.Color.CYAN;
-                break;
-            case 1:
-                Diamond.color=cc.Color.RED;
-                break;
-            case 2:
-                Diamond.color=cc.Color.ORANGE;
-                break;
-            case 3:
-                Diamond.color=cc.Color.GREEN;
-                break;
-            case 4:
-                Diamond.color=cc.Color.WHITE;
-                break;
+            var scene = cc.director.getScene();
+            var Diamond = cc.instantiate(this.diamond);
+            Diamond.parent = scene;
+            Diamond.setPosition(selfCollider.node.x, selfCollider.node.y);
+            Diamond.name='diam';
+            var color=Math.floor(Math.random()*5);
+            switch(color)
+            {
+                case 0:
+                    Diamond.color=cc.Color.CYAN;
+                    break;
+                case 1:
+                    Diamond.color=cc.Color.RED;
+                    break;
+                case 2:
+                    Diamond.color=cc.Color.ORANGE;
+                    break;
+                case 3:
+                    Diamond.color=cc.Color.GREEN;
+                    break;
+                case 4:
+                    Diamond.color=cc.Color.WHITE;
+                    break;
+            }
         }
     },
 

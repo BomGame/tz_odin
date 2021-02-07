@@ -1,6 +1,6 @@
 
 (function () {
-var scripts = [{"deps":{"./assets/Scripts/PoleScript":1,"./assets/Scripts/SpawnScript":3,"./assets/Scripts/Game":4,"./assets/Scripts/Diamond":2},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/PoleScript.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/Diamond.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/SpawnScript.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/Game.js"}];
+var scripts = [{"deps":{"./assets/Scripts/Diamond":3,"./assets/Scripts/PoleScript":4,"./assets/Scripts/SpawnScript":2,"./assets/Scripts/Destroy":5,"./assets/Scripts/Game":1},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/Game.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/SpawnScript.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/Diamond.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/PoleScript.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/Destroy.js"}];
 var entries = ["preview-scripts/__qc_index__.js"];
 var bundleScript = 'preview-scripts/__qc_bundle__.js';
 

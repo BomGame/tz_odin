@@ -10,6 +10,7 @@
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}
+require('./assets/Scripts/Destroy');
 require('./assets/Scripts/Diamond');
 require('./assets/Scripts/Game');
 require('./assets/Scripts/PoleScript');
